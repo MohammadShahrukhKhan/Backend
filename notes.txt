@@ -1,0 +1,36 @@
+GLOBALS = NO WINDOW !!!
+
+__dirname - path to current directory 
+__filename - file name 
+require - function to use modules (common JS)
+module - info about current module (file) 
+process - infp about env where the program is being executed 
+built-in modules - os path fs http 
+
+
+npm init shortcut npm init -y
+
+GET - Read data
+POST - Insert data
+PUT - Update data
+DELETE - Delete data
+
+port is a communication endpoint
+20 - FTP(file transfer protocol), data transfer
+21 - FTP, command control
+80 - http, use in www
+
+methods to be used in express
+app.get 
+app.post 
+app.put 
+app.delete 
+app.all 
+app.use 
+app.listen 
+
+JSON stands for Javascript object notation
+
+express middleware are the functions that execute during the request to the server
+
+morgan is a third party middleware
