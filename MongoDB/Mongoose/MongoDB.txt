@@ -2,9 +2,9 @@ C.R.U.D - Create Read Update Delete
 
 1. Inserting Data in MongoDB 
 
-show dbs
+show dbs // shows all the existing database
 
-use mechanificial // new data gets created and if exists already the will be used
+use mechanificial // new database gets created and if it already exists then will be used, you can name your database anything, here the name is mechanificial
 
 db.items.insertOne({name: "Shark A Phone", price: 1000, camera: "thermal", display: "paper", processor: "UltraShark"})
 
