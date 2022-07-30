@@ -16,7 +16,7 @@ db.items.find()
 
 use mechanificial
 
-show collections
+show collections // here " items " is the name of one of the collections of the database and again the name of the collection can also be anything
 
 db.items.find()
 
