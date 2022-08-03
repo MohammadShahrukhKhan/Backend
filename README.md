@@ -1,6 +1,6 @@
 # Backend-Web-Development
 
-Order of learning(make sure you know the fundamentals of Javascript & HTML):
+Order of learning (make sure you know the fundamentals of Javascript & HTML) :
 
 1. start by learning NodeJS concepts
 2. then switch to ExpressJS
