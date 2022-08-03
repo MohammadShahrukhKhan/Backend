@@ -4,5 +4,5 @@
 // __filename - file name 
 // require - function to use modules (common JS)
 // module - info about current module (file) 
-// process - infp about env where the program is being executed 
+// process - info about env where the program is being executed 
 // built-in modules - os path fs http 
