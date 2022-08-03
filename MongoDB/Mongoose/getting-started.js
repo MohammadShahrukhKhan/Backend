@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/shark');
+  await mongoose.connect('mongodb://localhost:27017/shark'); // " shark " is the name of database
   console.log('connected')
 }
 
