@@ -1,12 +1,4 @@
-#For windows powershell or command prompt or linux terminal:
-type ssh root@ubuntu_IP_address in the terminal
-Enter Ubuntu Password
-
-#For PuTTY:
-Enter ubuntu_IP_address in the HOST_NAME/IP_ADDRESS field
-and press Open
-type root in the terminal
-Enter Ubuntu Password
+#In your UBUNTU terminal type the following commands:
 
 ufw enable (enables Uncomplicated Firewall)
 
@@ -44,8 +36,21 @@ apt install vim (install vim code editor)
 
 vim index.html (to edit the file)
 
+#In your browser type the ubuntu_IP_address in the search bar to see the static index.html page
+
+#To use in windows powershell or command prompt or linux terminal:
+type ssh root@ubuntu_IP_address in the terminal
+Enter Ubuntu Password
+
+#To use in PuTTY:
+Enter ubuntu_IP_address in the HOST_NAME/IP_ADDRESS field
+and press Open
+type root in the terminal
+Enter Ubuntu Password
+
+NOTE:
+In your UBUNTU terminal type:
+
 wget web_address_of_an_image (converts link of image to image_file.jpg)
 
 mv image_file.jpg image.jpg (to rename the file)
-
-#in the browser type the ubuntu_IP_address in the search bar to see the static index.html page
