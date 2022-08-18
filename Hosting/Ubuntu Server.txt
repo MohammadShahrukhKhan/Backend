@@ -1,4 +1,4 @@
-#For windows powershell or command prompt:
+#For windows powershell or command prompt or linux terminal:
 type ssh root@ubuntu_IP_address in the terminal
 Enter Ubuntu Password
 
@@ -8,21 +8,39 @@ and press Open
 type root in the terminal
 Enter Ubuntu Password
 
-ufw status (helps us see the current state of Uncomplicated Firewall in linux)
+ufw enable (enables Uncomplicated Firewall)
+
+ufw status (helps us see the current state of ufw in linux)
+
+service ufw status (states that the service of ufw is running in the background and is ready to work)
+
+ufw allow 22 (allows port 22)
 
 apt install apache2
 
-ufw app list
+ufw app list (shows the available applications in ufw)
 
-ufw app info "Apache Full"
+ufw app info "Apache Full" (returns profile, title, description and port)
 
-ufw allow in "Apache Full"
+ufw allow in "Apache Full" (allows "Apache Full")
+
+apt install openssh-server
+
+systemctl enable ssh (enables the ssh service)
+
+systemctl start ssh (starts the ssh service)
+
+apt install net-tools (to install ifconfig)
+
+ifconfig (to find the IP address, the inet)
 
 cd /var/www/
 
 cd html
 
 ls html (gives index.html file)
+
+apt install vim (install vim code editor)
 
 vim index.html (to edit the file)
 
