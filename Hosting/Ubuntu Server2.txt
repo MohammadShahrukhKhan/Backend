@@ -1,0 +1,47 @@
+#To Host multiple websites on a single hosting server by creating nested folders
+
+cd /var/www/
+
+ls (gives html folder)
+
+mkdir -p /var/www/test.com/public_html
+
+ls (gives html and test.com folders)
+
+cd test.com/ 
+
+ls (gives public_html folder)
+
+cd /etc/apache2/sites-available/
+
+ls (gives 000-default.conf and default-ssl.conf files)
+
+vim 000-default.conf (opens file in vim editor)
+* When the file opens then you can set ServerName 00.00.00.00 (your servers IP address)
+
+cp 000-default.conf test.com.conf (copies the content of 000-default.conf in test.com.conf)
+
+ls (gives 000-default.conf, default-ssl.conf and test.com.conf files)
+
+vim test.com.conf (opens file in vim editor)
+* When the file opens then you can set ServerName www.your_domain_name.com and ServerAlias your_domain_name.com
+* Set DocumentRoot /var/www/your_domain_name.com
+* Make sure your_domain_name is linked with your servers IP address
+
+a2ensite test.com.conf (enables the conf file like 000-default.conf & default-ssl.conf)
+
+systemctl reload apache2 (to activate the new configuration)
+
+***NOW***
+
+cd /var/www
+
+mkdir your_domain_name.com (a new folder is created)
+
+cd your_domain_name.com
+
+touch index.html
+
+vim index.html (opens file in vim editor)
+
+#Save the file (index.html) and type your_domain_name in your browsers search bar, Let's go
