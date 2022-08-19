@@ -6,7 +6,7 @@ Prerequisites:
 3. Linux CLI Commands
 
 Order of learning:
-1. start by learning NodeJS concepts
+- start by learning NodeJS concepts
 2. then switch to ExpressJS
 3. then move to API
 4. then learn to use MongoDB/Mongoose
