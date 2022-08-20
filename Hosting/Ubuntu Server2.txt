@@ -4,14 +4,6 @@ cd /var/www/
 
 ls (gives html folder)
 
-mkdir -p /var/www/test.com/public_html
-
-ls (gives html and test.com folders)
-
-cd test.com/ 
-
-ls (gives public_html folder)
-
 cd /etc/apache2/sites-available/
 
 ls (gives 000-default.conf and default-ssl.conf files)
