@@ -36,9 +36,9 @@ pm2 start index.js (run your application, index.js, in the background)
 
 pm2 startup systemd (generates and configures a startup script to launch PM2 and its managed processes on server boots)
 
-pm2 stop index.js/process_id (stop an application)
+pm2 stop index.js/id (stop an application)
 
-pm2 restart index.js/process_id (restart an application)
+pm2 restart index.js/id (restart an application)
 
 pm2 list (list of applications like index.js currently managed by PM2)
 
