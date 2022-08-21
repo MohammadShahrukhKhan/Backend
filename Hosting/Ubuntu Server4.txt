@@ -1,0 +1,50 @@
+#To add your_domain_name in your NodeJS application
+
+cd /etc/apache2/sites-available/
+
+ls (gives 000-default.conf  default-ssl.conf  test.com.conf)
+
+a2dissite test.com.conf (site test.com.conf gets disabled)
+
+systemctl reload apache2 (activates the new configuration)
+
+a2enmod proxy proxy_http rewrite headers expires (enable these modules)
+
+systemctl restart apache2 (to activate the new configuration)
+
+touch node.index.conf (since test.com.conf is disabled, your_domain_name can be added here)
+
+ls (gives 000-default.conf  default-ssl.conf  node.index.conf  test.com.conf)
+
+vim node.index.conf (open in vim code editor)
+
+***once opened in vim code editor write the following codes in the file***
+
+<VirtualHost *:80>
+    ServerName your_domain_name.com
+    ServerAlias www.your_domain_name.com
+
+    ProxyRequests Off
+    ProxyPreserveHost On
+    ProxyVia Full
+
+    <Proxy *>
+        Require all granted
+    </Proxy>
+
+    ProxyPass / http://00.00.00.00:PORT/
+    ProxyPassReverse / http://00.00.00.00:PORT/
+</VirtualHost>
+
+***The host name (00.00.00.00) should be your servers IP address***
+***PORT should be the one added in index.js application***
+
+a2ensite node.index.conf (enables the site node.index.conf)
+
+systemctl reload apache2 (to activate the new configuration)
+
+pm2 ls (to check if index.js application is online)
+
+curl 00.00.00.00:PORT (you may check if the application is running)
+
+#Run the domain name in your browser to check if the application is running, Let's Go
