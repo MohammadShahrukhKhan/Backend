@@ -33,12 +33,16 @@ npm install -g pm2 (PM2 provides an easy way to manage and daemonize application
 ***The -g option tells npm to install the module globally, so that it’s available system-wide***
 
 pm2 start index.js (run your application, index.js, in the background)
+OR
+pm2 start index.js --name "name_of_app" (add a name to the application index.js, and run in the background)
 
 pm2 startup systemd (generates and configures a startup script to launch PM2 and its managed processes on server boots)
 
 pm2 stop index.js/id (stop an application)
 
 pm2 restart index.js/id (restart an application)
+
+pm2 delete index.js (delete an application)
 
 pm2 list (list of applications like index.js currently managed by PM2)
 
