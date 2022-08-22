@@ -1,4 +1,4 @@
-#In your UBUNTU terminal type the following commands:
+#In your UBUNTU TERMINAL type the following commands:
 
 ufw enable (enables Uncomplicated Firewall)
 
@@ -38,15 +38,13 @@ apt install vim (install vim code editor)
 
 vim index.html (to edit the file)
 
-#In your browser type the ubuntu_IP_address in the search bar to see the static index.html page
+wget webAddressOfAnImage (converts the link of image to imageFile.jpg)
 
-#To access UBUNTU in windows powershell or command prompt or linux terminal:
-type ssh root@ubuntu_IP_address in the terminal
+mv imageFile.jpg imageFile2.jpg (to rename the file)
+
+#In your browser type the 00.00.00.00 (ubuntu server's IP address) in the search bar to see the static index.html page
+
+#To access UBUNTU SERVER in your favourite CLI such as WINDOWS POWERSHELL/COMMAND PROMPT/LINUX TERMINAL:
+open your CLI
+type ssh root@00.00.00.00 (ubuntu server's IP address)
 Enter Ubuntu Password
-
-NOTE:
-Type these commands in your UBUNTU terminal:
-
-wget web_address_of_an_image (converts link of image to image_file.jpg)
-
-mv image_file.jpg image.jpg (to rename the file)
