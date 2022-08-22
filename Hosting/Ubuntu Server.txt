@@ -24,9 +24,7 @@ systemctl start ssh (starts the ssh service)
 
 apt install net-tools (to install ifconfig)
 
-ifconfig (to find the servers IP address, the inet)
-OR
-curl ifconfig.me (to find the servers IP address)
+curl ifconfig.me (to find the servers public IP address)
 
 cd /var/www/
 
