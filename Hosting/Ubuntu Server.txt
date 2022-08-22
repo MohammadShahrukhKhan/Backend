@@ -24,7 +24,9 @@ systemctl start ssh (starts the ssh service)
 
 apt install net-tools (to install ifconfig)
 
-ifconfig (to find the IP address, the inet)
+ifconfig (to find the servers IP address, the inet)
+OR
+curl ifconfig.me (to find the servers IP address)
 
 cd /var/www/
 
@@ -38,14 +40,8 @@ vim index.html (to edit the file)
 
 #In your browser type the ubuntu_IP_address in the search bar to see the static index.html page
 
-#To use in windows powershell or command prompt or linux terminal:
+#To access UBUNTU in windows powershell or command prompt or linux terminal:
 type ssh root@ubuntu_IP_address in the terminal
-Enter Ubuntu Password
-
-#To use in PuTTY:
-Enter ubuntu_IP_address in the HOST_NAME/IP_ADDRESS field
-and press Open
-type root in the terminal
 Enter Ubuntu Password
 
 NOTE:
