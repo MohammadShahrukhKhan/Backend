@@ -1,10 +1,11 @@
 #In your UBUNTU TERMINAL type the following commands:
 
-ufw enable (enables Uncomplicated Firewall)
-
 ufw status (helps us see the current state of ufw in linux)
 
 service ufw status (states that the service of ufw is running in the background and is ready to work)
+
+***Do not enable this right now***
+ufw enable (enables Uncomplicated Firewall)
 
 ufw allow 22 (allows port 22)
 
