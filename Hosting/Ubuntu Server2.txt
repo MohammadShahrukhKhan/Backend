@@ -1,4 +1,4 @@
-#To Host multiple websites on a single hosting server by creating nested folders
+#To Host multiple websites on a single hosting server
 
 cd /var/www/
 
