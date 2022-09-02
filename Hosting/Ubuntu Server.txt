@@ -48,4 +48,4 @@ mv imageFile.jpg imageFile2.jpg (to rename the file)
 #To access UBUNTU SERVER in your favourite CLI such as WINDOWS POWERSHELL/COMMAND PROMPT/LINUX TERMINAL:
 open your CLI
 type ssh root@00.00.00.00 (ubuntu server's IP address)
-Enter Ubuntu Password
+Enter Ubuntu server's Password
