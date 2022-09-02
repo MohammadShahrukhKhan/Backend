@@ -39,11 +39,13 @@ apt install vim (install vim code editor)
 
 vim index.html (to edit the file)
 
-wget webAddressOfAnImage (converts the link of image to imageFile.jpg)
+***Additional Info***
+wget web_address_of_an_image (converts the link of an image to an "image_file")
 
-mv imageFile.jpg imageFile2.jpg (to rename the file)
+mv image_file image.jpg (to rename the file (make sure you add .jpg/.jpeg or .png in the image file name))
 
-#In your browser type the 00.00.00.00 (ubuntu server's IP address) in the search bar to see the static index.html page
+***NOW***
+In your browser type the 00.00.00.00 (ubuntu server's IP address) in the search bar to see the static index.html page
 
 #To access UBUNTU SERVER in your favourite CLI such as WINDOWS POWERSHELL/COMMAND PROMPT/LINUX TERMINAL:
 open your CLI
