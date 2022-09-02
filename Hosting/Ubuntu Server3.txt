@@ -44,7 +44,7 @@ pm2 restart index.js/id (restart an application)
 
 pm2 delete index.js (delete an application)
 
-pm2 list (list of applications like index.js currently managed by PM2)
+pm2 list/ls (list of applications like index.js currently managed by PM2)
 
 pm2 info index.js (more information about a specific application can be found)
 
