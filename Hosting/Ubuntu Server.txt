@@ -39,15 +39,15 @@ apt install vim (install vim code editor)
 
 vim index.html (to edit the file)
 
+***NOW***
+In your browser type 00.00.00.00 (the ubuntu server's IP address) in the search bar to see your static page (index.html) being hosted on the web
+
 ***Additional Info***
 wget web_address_of_an_image (converts the link of an image to an "image_file")
 
 mv image_file image.jpg (to rename the file (make sure you add .jpg/.jpeg or .png in the image file name))
 
-***NOW***
-In your browser type the 00.00.00.00 (ubuntu server's IP address) in the search bar to see the static index.html page
-
 #To access UBUNTU SERVER in your favourite CLI such as WINDOWS POWERSHELL/COMMAND PROMPT/LINUX TERMINAL:
 open your CLI
-type ssh root@00.00.00.00 (ubuntu server's IP address)
+type ssh root@00.00.00.00 (the ubuntu server's IP address)
 Enter Ubuntu server's Password
