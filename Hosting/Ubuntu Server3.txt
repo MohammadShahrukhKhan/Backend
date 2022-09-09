@@ -5,6 +5,30 @@ apt install nodejs
 ***if npm is not found then run***
 apt install npm
 
+***ALTERNATE METHOD FOR UBUNTU 20.04 & LATER VERSIONS***
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+OR
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  (This loads nvm)
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  (This loads nvm bash_completion)
+
+nvm --version (verify that nvm has been installed)
+
+nvm install node (latest node js server version)
+OR
+nvm install --lts (latest stable node js server version)
+
+node --version (check nodejs installed)
+
+npm -v (check npm installed)
+
+nvm ls (view all nodejs server installed)
+
 apt-get install build-essential (in order for some npm packages to work such as those that require compiling code from source)
 
 cd /home/
@@ -13,13 +37,15 @@ mkdir nodeapp (create a directory for your applications)
 
 cd nodeapp/
 
-touch index.js
+touch index.js (create a javascript file)
 
-vim index.js
+vim index.js (opens the file in the terminal)
+OR
+nano index.js (opens the file in the terminal)
 
 ***in your index.js file set your servers IP address (00.00.00.00) as your host name***
 
-ufw allow PORT (the port added in your index.js file)
+ufw allow PORT (allows the port added in your index.js file)
 
 node index.js (runs the application)
 
@@ -42,7 +68,7 @@ pm2 stop index.js/id (stop an application)
 
 pm2 restart index.js/id (restart an application)
 
-pm2 delete index.js (delete an application)
+pm2 delete index.js/id (delete an application)
 
 pm2 list/ls (list of applications like index.js currently managed by PM2)
 
