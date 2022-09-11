@@ -1,0 +1,38 @@
+FOR UBUNTU USERS:
+
+sudo -i -u postgres (to start postgreSQL)
+
+psql (to enter sql environment)
+
+ALTERNATE METHOD:
+sudo -u postgres psql (to start and enter sql environment)
+
+\q (to exit sql environment)
+
+\list (list of databases)
+
+\! clear (clear screen)
+
+CREATE DATABASE database_name; (create a database)
+
+\c database_name (login to database)
+
+\dt (list of relations/tables)
+
+\du (list of roles)
+
+CREATE TABLE students(std_id INT PRIMARY KEY, std_name VARCHAR(20) NOT NULL, std_branch VARCHAR(10) NOT NULL, std_dob VARCHAR(10) NOT NULL);
+
+INSERT INTO students(std_id, std_name, std_branch, std_dob) VALUES(1, 'ramchuran', 'cse', '01-02-03');
+OR
+INSERT INTO students VALUES(2, 'ramapaao', 'ece', '04-05-06');
+
+SELECT * FROM students; (read all from every row of table students)
+
+SELECT std_name, std_dob FROM students WHERE std_id=1; (read something from a specific row of table students)
+
+SELECT std_name, std_dob FROM students; (read something from every row of table students)
+
+UPDATE students SET std_dob='01-02-83' WHERE std_id=2; (update something from a specific row of table students)
+
+DELETE FROM students WHERE std_id=2; (delete a specific row of table students)
