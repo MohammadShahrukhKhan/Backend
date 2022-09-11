@@ -9,6 +9,6 @@ Order of learning:
 - start by learning NodeJS concepts
 - then switch to ExpressJS
 - then move to API
-- then learn to use MongoDB/Mongoose
+- then learn either of the databases MongoDB/Mongoose & PostgreSQL/pg
 - and finally head on to Hosting
 - make sure to follow along the " .txt " files within the folders
