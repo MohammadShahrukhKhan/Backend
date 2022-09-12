@@ -8,10 +8,10 @@ const port = process.env.PORT || 9000
 
 const pool = new Pool({
     "host": "localhost",
-    "port": 3000,
+    "port": 5432,
     "user": "postgres",
-    "password": "1Windower",
-    "database": "mechanificial",
+    "password": "your_password",
+    "database": "your_database",
     "max": 20,
     "connectionTimeoutMillis": 0,
     "idleTimeoutMillis": 0
@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
     const fromDate = new Date();
 
     // return all rows
-    const results = await pool.query("select * from userdata")
+    const results = await pool.query("select * from your_table")
     console.table(results.rows)
 
     const toDate = new Date()
