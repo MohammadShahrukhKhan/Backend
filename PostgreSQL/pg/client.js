@@ -11,15 +11,15 @@ app.get("/", async (req, res) => {
 
     const client = new Client({
         "host": "localhost",
-        "port": 3000,
+        "port": 5432,
         "user": "postgres",
-        "password": "1Windower",
-        "database": "mechanificial"
+        "password": "your_password",
+        "database": "your_database"
     })
     // connect
     await client.connect()
     // return all rows
-    const results = await client.query("select * from userdata")
+    const results = await client.query("select * from your_table")
     console.table(results.rows)
     // end
     client.end()
