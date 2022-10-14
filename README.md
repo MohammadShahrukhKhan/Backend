@@ -6,7 +6,7 @@ Prerequisites:
 - Linux CLI Commands
 
 Order:
-- NodeJS concepts
+- NodeJS
 - ExpressJS
 - API
 - PostgreSQL or/and MongoDB
