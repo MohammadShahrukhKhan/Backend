@@ -1,4 +1,4 @@
-# Backend-Web-Development
+# Backend Web Development with NodeJS
 
 Prerequisites:
 - HTML
